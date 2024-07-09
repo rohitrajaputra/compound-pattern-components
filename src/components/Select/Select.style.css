@@ -1,0 +1,41 @@
+.select {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+}
+
+.select-trigger {
+  padding: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-trigger.label {
+  width: 80%;
+}
+
+.option-list {
+  z-index: 100;
+}
+
+.select-options {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
