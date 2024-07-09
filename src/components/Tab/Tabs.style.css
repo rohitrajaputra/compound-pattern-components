@@ -1,0 +1,36 @@
+.tabs {
+  margin: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  width: 50%;
+}
+
+.tab-list {
+  display: flex;
+  gap: 5px;
+}
+
+.tab {
+  padding: 6px 15px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.tab-pannels {
+  margin: 10px 0px;
+  background-color: lightgray;
+  padding: 20px;
+}
+
+.tab-pannel {
+  display: none;
+}
+
+.tab-pannel.active {
+  display: block;
+}
