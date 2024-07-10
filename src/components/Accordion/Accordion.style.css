@@ -1,0 +1,25 @@
+.accordion {
+  width: 50%;
+}
+
+.accordion-item {
+  border: 1px solid black;
+  border-bottom: none;
+  padding: 5px;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid black;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-pannel {
+  padding: 10px;
+}

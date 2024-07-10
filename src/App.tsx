@@ -3,6 +3,12 @@ import "./App.css";
 import { Option, OptionList, Select } from "./components/Select";
 import { Tab, TabList, TabPannel, TabPannels, Tabs } from "./components/Tab";
 import { SelectedOptionType } from "./types/select";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionItem,
+  AccordionPannel,
+} from "./components/Accordion";
 
 function App() {
   const [optionSelected, setOptionSelected] = useState<SelectedOptionType>();
@@ -36,6 +42,21 @@ function App() {
         </OptionList>
       </Select>
       {optionSelected && <h1>Selected Option : {optionSelected?.value}</h1>}
+
+      <Accordion>
+        <AccordionItem index={1}>
+          <AccordionHeader>Heading 1</AccordionHeader>
+          <AccordionPannel>Content for Heading1</AccordionPannel>
+        </AccordionItem>
+        <AccordionItem index={2}>
+          <AccordionHeader>Heading 2</AccordionHeader>
+          <AccordionPannel>Content for Heading2</AccordionPannel>
+        </AccordionItem>
+        <AccordionItem index={3}>
+          <AccordionHeader>Heading 3</AccordionHeader>
+          <AccordionPannel>Content for Heading3</AccordionPannel>
+        </AccordionItem>
+      </Accordion>
     </div>
   );
 }
